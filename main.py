@@ -11,7 +11,7 @@ class Data:
         self.private_key = private_key
 
 
-    def generete_keys(self):
+    def generate_keys(self):
         with open("publicKey.pem", "wb") as k:
             k.write(self.public_key.save_pkcs1("PEM"))
         with open("privateKey.pem", "wb") as k:
@@ -65,7 +65,7 @@ def main():
             if i == (1):
                 print()
                 spin.start()
-                data.generete_keys()
+                data.generate_keys()
                 spin.stop()
                 data.clear()
                 print("\n-----Generate Keys Selesai-----")
