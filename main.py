@@ -61,11 +61,7 @@ def main():
     spin = Halo(text="Generating Keys", spinner="dots")
     try:
         while True:
-            i = int(
-                input(
-                    "\n[1] Generate Keys\n\n[2] Load Public Key\n\n[3] Load Private Key\n\n[4] Encrypt Text\n\n[5] Decrypt Text\n\n>> Pilih Menu : "
-                )
-            )
+            i = int(input("\n[1] Generate Keys\n\n[2] Load Public Key\n\n[3] Load Private Key\n\n[4] Encrypt Text\n\n[5] Decrypt Text\n\n>> Pilih Menu : "))
             if i == (1):
                 print()
                 spin.start()
